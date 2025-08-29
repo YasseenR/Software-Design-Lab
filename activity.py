@@ -29,16 +29,10 @@ def randNums():
             max = num
 
     print(max)
+    for num in range(len(defaultArray)):
+        if math.isqrt(num) ** 2 == num:
+            print(f"Perfect Square Found: {num}")
 
-    for x in range(len(defaultArray)):
-        if x == 0:
-            return True
-        sqrtNum = math.sqrt(x)
-
-        if sqrtNum.is_integer():
-            print(f"Perfect Square Found: {sqrtNum}")
-        else:
-            return False
 
 
         
