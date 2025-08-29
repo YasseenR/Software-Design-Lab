@@ -36,7 +36,7 @@ def randNums():
         sqrtNum = math.sqrt(x)
 
         if sqrtNum.is_integer():
-            return True
+            print(f"Perfect Square Found: {sqrtNum}")
         else:
             return False
 
