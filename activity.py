@@ -30,15 +30,15 @@ def randNums():
 
     print(max)
 
-    for x in range(len(defaultArray)):
-        if x == 0:
-            return True
-        sqrtNum = math.sqrt(x)
 
-        if sqrtNum.is_integer():
-            print(f"Perfect Square Found: {sqrtNum}")
-        else:
-            return False
+def perfectSquare(num):
+    start = 1
+    end = num
+
+    for num in range(start, end + 1):
+        if math.isqrt(num) ** 2 == num:
+            print(num, end= " ")
+    
 
 
         
@@ -61,3 +61,5 @@ def isPrime(num):
     return True
 
 randNums()
+perfectSquare(100)
+
